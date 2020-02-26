@@ -1,0 +1,8 @@
+from selenium import webdriver
+import time
+links = ["https://www.google.co.in/maps/place/Barpeta,+Assam/@26.3290058,90.9961083,1405m/data=!3m1!1e3!4m5!3m4!1s0x37599b8b113a7219:0x42d877fa876af68c!8m2!3d26.3304209!4d91.0040547?hl=en"]
+driver = webdriver.Chrome("C:/Users/Abir Khan/Downloads/chrome/chromedriver.exe")
+driver.get("https://www.google.co.in/maps/place/Barpeta,+Assam/@26.3290058,90.9961083,1405m/data=!3m1!1e3!4m5!3m4!1s0x37599b8b113a7219:0x42d877fa876af68c!8m2!3d26.3304209!4d91.0040547?hl=en")
+time.sleep(12)
+driver.save_screenshot("C:/Users/Abir Khan/Desktop/IIT B/NEW SC/map.jpg")
+
